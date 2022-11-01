@@ -1,6 +1,6 @@
 # This base image starts up mongo
 # This version needs to correspond with the helm chart version
-ARG MONGODBVERSION=4.0.12
+ARG MONGODBVERSION=4.4.15
 FROM bitnami/mongodb:${MONGODBVERSION} as build
 
 # Use .dockerignore file to ignore unwanted files
